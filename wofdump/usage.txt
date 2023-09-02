@@ -1,0 +1,29 @@
+Usage:
+
+wofdump [Volumename] [-a<0|1|2|3>] [-l] [-h|k] 
+
+Volumename:
+
+Specifies target volume name. If not specified, default is C: drive.
+
+  e.g.
+    C:
+    \??\C:
+    \??\Volume{xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx}
+    \Device\HarddiskVolume1
+
+Options:
+
+-a <0|1|2|3> Displays only files compressed with the specified algorithm.
+             (if compressed backing file)
+             0 XPRESS4K
+             1 LZX
+             2 XPRESS8K
+             3 XPRESS16K
+
+-l Displays hardlink file path.
+
+-h Displays header each line.
+
+-k Displays mark on hard link file path (effective only with -l).
+
