@@ -13,7 +13,7 @@ Usage:
 
 ソースからビルドする場合は、Windows7のWDKとSDKが必要です。詳細は下記を参照してください。
 
-[Build方法](.\BUILD.md)
+[Build方法](BUILD.md)
 
 ## License
 
