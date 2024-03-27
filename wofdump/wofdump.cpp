@@ -482,6 +482,9 @@ NTSTATUS ParseArugment(int argc, WCHAR* argv[],PWSTR *ppszVolume)
 		i++;
 	}
 
+	if( fPrintHeader == PRINTHDR_HARDLINKMARK && fPrintHardLink != TRUE )
+		return STATUS_INVALID_PARAMETER;
+	
 	return 0;
 }
 
